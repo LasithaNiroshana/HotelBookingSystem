@@ -7,7 +7,7 @@ import { PaymentsComponent } from './pages/adminhome/payments/payments/payments.
 import { RoomsComponent } from './pages/adminhome/rooms/rooms/rooms.component';
 
 const routes: Routes = [
-  {path:'adminhome',component:AdminhomeComponent},
+  {path:'**',component:AdminhomeComponent},
   {path:'bookings',component:BookingsComponent},
   {path:'dashboard',component:DashboardComponent},
   {path:'payments',component:PaymentsComponent},

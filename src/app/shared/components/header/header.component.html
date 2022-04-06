@@ -1,0 +1,39 @@
+<mat-toolbar color="blue">
+  <mat-toolbar-row>
+    <!-- <span>
+      APP Logo
+    </span> -->
+    <button mat-icon-button (click)="toggleNav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="title" fxLayout="row" fxLayoutAlign="start end">
+      SunsetLodge
+    </div>
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+      <ul fxLayout="row" fxLayoutGap="20px">
+        <!-- <li>
+  <button mat-icon-button>
+    <mat-icon>settings</mat-icon>
+  </button>
+        </li>
+        <li>
+          <button mat-icon-button>
+            <mat-icon>help</mat-icon>
+          </button>
+                </li> -->
+                <li>
+                  <button mat-button [matMenuTriggerFor]="menu">
+                    <mat-icon>person</mat-icon>
+                  </button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item type= "button" (click)="logOut()">Sign Out
+    <mat-icon>log_out</mat-icon>
+  </button>
+</mat-menu>
+                        </li>
+      </ul>
+    </div>
+  </mat-toolbar-row>
+  </mat-toolbar>
+
+
