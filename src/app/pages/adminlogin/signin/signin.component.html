@@ -1,0 +1,16 @@
+<form #loginform="ngForm" class="signin-form">
+  <mat-form-field class="signin-full-width">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput placeholder="abc@gmail.com" name="email">
+    <mat-icon matSuffix>email</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field class="signin-full-width">
+    <mat-label>Password</mat-label>
+    <input type="password" matInput placeholder="Enter your password here"  name="password">
+    <mat-icon matSuffix>https</mat-icon>
+  </mat-form-field>
+
+  <a mat-raised-button class="loginbtn" (click)="signIn()" target="_blank" color="primary">LOGIN</a>
+</form>
+<!-- <app-spinner></app-spinner> -->
