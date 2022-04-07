@@ -27,7 +27,7 @@ export class AdminhomeComponent implements OnInit,OnDestroy {
   }
 
   showDashboard(){
-    this.router.navigate(['admindashboard'],{relativeTo:this.route});
+    this.router.navigate(['dashboard'],{relativeTo:this.route});
   }
 
   showBookings(){

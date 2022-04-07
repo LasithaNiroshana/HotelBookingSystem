@@ -7,11 +7,12 @@ import { PaymentsComponent } from './pages/adminhome/payments/payments/payments.
 import { RoomsComponent } from './pages/adminhome/rooms/rooms/rooms.component';
 
 const routes: Routes = [
-  {path:'**',component:AdminhomeComponent},
+  {path:'adminhome',component:AdminhomeComponent,children:[
   {path:'bookings',component:BookingsComponent},
   {path:'dashboard',component:DashboardComponent},
   {path:'payments',component:PaymentsComponent},
   {path:'rooms',component:RoomsComponent}
+  ]}
 ];
 
 @NgModule({
