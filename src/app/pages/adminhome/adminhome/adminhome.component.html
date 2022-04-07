@@ -1,0 +1,42 @@
+<app-header (toggleClicked)="toggleNav()"></app-header>
+<mat-drawer-container class="drawer-container">
+  <mat-drawer class="drawer" mode="side" [opened]="toggleOpen">
+    <mat-nav-list class="sidenav">
+      <div class="profile-card">
+        <!-- <div class="header"
+        *ngIf="user"> -->
+         <h2>
+          <!-- {{user?.displayName}} -->
+         </h2>
+         <!-- <mat-label class="profile-label">
+          {{user?.role}}
+        </mat-label> -->
+         <h4>
+           <!-- {{user?.email}} -->
+          </h4>
+        </div>
+        <!-- <img class="img-responsive" src='{{user?.photoURL}}'> -->
+      <!-- </div> -->
+      <mat-divider></mat-divider>
+      <div>
+        <mat-accordion>
+          <a mat-list-item class="listitem" (click)="showDashboard()">Dashboard</a>
+          <a  mat-list-item class="listitem" (click)="showBookings()">Bookings</a>
+          <a  mat-list-item class="listitem" (click)="showPayments()">Payments</a>
+          <a  mat-list-item class="listitem" (click)="showRooms()">Rooms</a>
+    </mat-accordion>
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <!-- <img src="../../../assets/Images/rotaxlogo.jpg" class="logo"> -->
+    </div>
+      </div>
+    </mat-nav-list>
+
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+    <!-- <app-admindashboard *ngIf="showCustomers()==null"></app-admindashboard> -->
+  </mat-drawer-content>
+</mat-drawer-container>
+<app-footer></app-footer>
+
+
