@@ -1,0 +1,27 @@
+.center-content{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.welcome-card {
+  max-width: 400px;
+  border-radius: 10px;
+  border-width: 10px;
+  border-color: royalblue;
+}
+
+.welcome{
+  flex-direction: row ;
+  align-content: center flex-start;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.center-content{
+  text-align: -webkit-center;
+}

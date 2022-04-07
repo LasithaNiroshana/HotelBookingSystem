@@ -1,0 +1,48 @@
+<form class="signup-form">
+  <!-- <div class="error">
+    <div class="auth-error">
+      {{authError?.message}}
+    </div>
+  </div> -->
+  <mat-form-field class="signup-full-width">
+    <mat-label>First Name</mat-label>
+    <input type="text" matInput placeholder="John"  name="first_name">
+  </mat-form-field>
+
+  <mat-form-field class="signup-full-width">
+    <mat-label>Last Name</mat-label>
+    <input type="text" matInput placeholder="Doe" name="last_name">
+  </mat-form-field>
+
+  <mat-form-field class="signup-full-width">
+    <mat-label>Mobile No.</mat-label>
+    <input type="text" matInput placeholder="714568424" maxlength="9"  name="mobile_no">
+  </mat-form-field>
+
+  <div>
+    <mat-label>Profile Picture</mat-label>
+  </div>
+
+    <!-- <input type="file" name="dp"  [(ngModel)]="selectedFile" (change)="onFileSelected($event)"> -->
+
+  <mat-form-field class="signup-full-width">
+    <mat-label>Email</mat-label>
+    <input type="email" matInput placeholder="abc@gmail.com" name="email">
+  </mat-form-field>
+
+  <mat-form-field class="signup-full-width">
+    <mat-label>Password</mat-label>
+    <input type="password" matInput placeholder="Password"  name="password">
+  </mat-form-field>
+
+  <mat-form-field class="signup-full-width">
+    <mat-label>Confirm Password</mat-label>
+    <input type="password" matInput placeholder="Confirm Password"  name="cpassword">
+  </mat-form-field>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="12px">
+  <button class="signup-btn" mat-raised-button color="primary" (click)="createUser()">SIGNUP</button>
+  <button class="reset-btn" type="button" mat-raised-button (click)="resetForm()">RESET</button>
+</div>
+
+</form>
+<!-- <app-spinner></app-spinner> -->
